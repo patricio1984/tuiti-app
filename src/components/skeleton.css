@@ -1,0 +1,32 @@
+@layer utilities {
+  .shimmer-bg {
+    background: linear-gradient(
+      90deg,
+      rgba(229, 229, 229, 0.1) 0%,
+      rgba(229, 229, 229, 0.3) 50%,
+      rgba(229, 229, 229, 0.1) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite linear;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .shimmer-bg {
+      background: linear-gradient(
+        90deg,
+        rgba(75, 85, 99, 0.1) 0%,
+        rgba(75, 85, 99, 0.3) 50%,
+        rgba(75, 85, 99, 0.1) 100%
+      );
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}

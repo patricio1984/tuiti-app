@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PostItem > renderiza correctamente (snapshot) 1`] = `
+<div>
+  <li
+    class="cursor-pointer list-none"
+  >
+    <div
+      class="flex items-start gap-3 px-4 py-3 border border-gray-200 dark:border-neutral-700
+                 -mb-px animate-fade-in hover:bg-gray-100 dark:hover:bg-[#16181c] transition-colors duration-200"
+    >
+      <img
+        alt=""
+        class="w-10 h-10 rounded-full bg-gray-300 dark:bg-neutral-700 object-cover"
+        src="https://i.pravatar.cc/150?u=1"
+      />
+      <div
+        class="flex-1"
+      >
+        <p
+          class="text-sm text-gray-800 dark:text-gray-200 font-medium"
+        >
+          Post de prueba
+           
+          <span
+            class="text-gray-500 text-sm ml-1"
+          >
+            @usuario
+            1
+          </span>
+        </p>
+        <div
+          class="mt-1"
+        >
+          <p
+            class="text-sm text-gray-600 dark:text-gray-400 mt-1"
+          >
+            Contenido del post
+          </p>
+        </div>
+      </div>
+    </div>
+  </li>
+</div>
+`;

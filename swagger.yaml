@@ -1,0 +1,126 @@
+openapi: 3.0.0
+info:
+  title: JSONPlaceholder API
+  version: 1.0.0
+
+servers:
+  - url: https://jsonplaceholder.typicode.com
+
+paths:
+  /posts:
+    get:
+      summary: Get posts
+      operationId: getPosts
+      tags: [posts]
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Post'
+
+  /posts/{postId}:
+    get:
+      summary: Get post by ID
+      operationId: getPostById
+      tags: [posts]
+      parameters:
+        - in: path
+          name: postId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Post'
+
+  /posts/{postId}/comments:
+    get:
+      summary: Get comments for a post
+      operationId: getCommentsByPostId
+      tags: [comments]
+      parameters:
+        - in: path
+          name: postId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Comment'
+
+  /users/{userId}:
+    get:
+      summary: Get user by ID
+      operationId: getUserById
+      tags: [users]
+      parameters:
+        - in: path
+          name: userId
+          required: true
+          schema:
+            type: integer
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/User'
+
+components:
+  schemas:
+    Post:
+      type: object
+      properties:
+        userId:
+          type: integer
+        id:
+          type: integer
+        title:
+          type: string
+        body:
+          type: string
+
+    Comment:
+      type: object
+      properties:
+        postId:
+          type: integer
+        id:
+          type: integer
+        name:
+          type: string
+        email:
+          type: string
+        body:
+          type: string
+
+    User:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        username:
+          type: string
+        email:
+          type: string
+        phone:
+          type: string
+        website:
+          type: string
