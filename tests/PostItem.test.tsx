@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { PostItem } from '@/components/PostItem';
 import type { Post } from '@/api/jSONPlaceholderAPI.schemas';

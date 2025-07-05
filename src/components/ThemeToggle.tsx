@@ -10,7 +10,7 @@ export const ThemeToggle = () => {
     <button
       onClick={toggleTheme}
       aria-label="Cambiar tema"
-      className="ml-auto p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition"
+      className="cursor-pointer ml-auto p-2 rounded hover:bg-gray-200 dark:hover:bg-gray-800 transition"
     >
       {theme === 'dark' ? (
         <Moon className="w-5 h-5 text-white" />

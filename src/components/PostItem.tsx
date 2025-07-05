@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { useRouter } from 'next/navigation';
 import { FeedItemLayout } from './ui/FeedItemLayout';
 import type { Post } from '@/api/jSONPlaceholderAPI.schemas';
