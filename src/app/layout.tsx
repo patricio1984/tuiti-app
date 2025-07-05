@@ -3,7 +3,7 @@ import '../styles/globals.css';
 import { Providers } from '@/app/Providers';
 
 export const metadata = {
-  metadataBase: new URL('https://tuiti.vercel.app'),
+  metadataBase: new URL('https://tuiti-app.vercel.app/'),
   title: 'Tuiti — Un homenaje frontend a Twitter con Next.js',
   description:
     'Una app inspirada en X (Twitter) que permite explorar, comentar y descubrir publicaciones de usuarios. Construida con Next.js, Orval y React Query.',
