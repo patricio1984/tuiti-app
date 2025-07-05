@@ -58,4 +58,14 @@ export default [
       'prefer-const': 'error',
     },
   },
+
+  {
+    files: ['tests/**/*.test.tsx'],
+    languageOptions: {
+      globals: {
+        beforeEach: 'readonly',
+        afterEach: 'readonly',
+      },
+    },
+  },
 ];
