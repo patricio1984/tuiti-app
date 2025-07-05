@@ -35,11 +35,11 @@ export const metadata = {
     title: 'Tuiti — Un homenaje frontend a Twitter con Next.js',
     description:
       'Una app inspirada en X (Twitter) que permite explorar, comentar y descubrir publicaciones de usuarios. Construida con Next.js, Orval y React Query.',
-    url: 'https://tuiti-app.vercel.app/',
+    url: 'https://tuiti.vercel.app/',
     siteName: 'Tuiti',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://tuiti.vercel.app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Tuiti',
@@ -54,7 +54,7 @@ export const metadata = {
     description:
       'Explorá una app frontend moderna basada en JSONPlaceholder. UI inspirada en Twitter. Hecha con Next.js.',
     creator: '@tu_usuario',
-    images: ['/og-image.png'],
+    images: ['https://tuiti.vercel.app/og-image.png'],
   },
 };
 
