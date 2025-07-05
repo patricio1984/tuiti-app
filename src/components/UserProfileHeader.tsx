@@ -37,9 +37,9 @@ export const UserProfileHeader = ({ userId }: { userId: number }) => {
 
       <div className="px-4 mt-2 space-y-1">
         <h2 className="text-xl font-bold">{user.name}</h2>
-        <p className="text-gray-500">@{user.username}</p>
+        <p className="text-gray-400">@{user.username}</p>
         <p className="text-sm mt-2">{extra.bio}</p>
-        <p className="text-sm text-gray-500">
+        <p className="text-sm text-gray-400">
           {extra.location} · Fecha de nacimiento: {extra.birthDate} · Se unió el{' '}
           {joinedDate}
         </p>
@@ -53,7 +53,7 @@ export const UserProfileHeader = ({ userId }: { userId: number }) => {
           </span>
         </div>
 
-        <p className="text-sm text-gray-500 mt-1">
+        <p className="text-sm text-gray-400 mt-1">
           {extra.followedByYou
             ? 'Lo seguís'
             : 'Ninguna de las cuentas que sigues sigue a este usuario'}

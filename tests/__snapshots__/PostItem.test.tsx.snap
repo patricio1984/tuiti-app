@@ -23,7 +23,7 @@ exports[`PostItem > renderiza correctamente (snapshot) 1`] = `
           Post de prueba
            
           <span
-            class="text-gray-500 text-sm ml-1"
+            class="text-gray-400 text-sm ml-1"
           >
             @usuario
             1

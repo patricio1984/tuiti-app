@@ -8,7 +8,7 @@ export const CommentItem: React.FC<{ comment: Comment }> = ({ comment }) => {
       header={
         <p className="text-sm text-gray-800 dark:text-gray-200 font-medium">
           {comment.name}{' '}
-          <span className="text-gray-500 text-sm ml-1">
+          <span className="text-gray-400 text-sm ml-1">
             @{comment.email?.split('@')[0] ?? 'anonimo'}
           </span>
         </p>

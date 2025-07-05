@@ -18,7 +18,7 @@ export const PostItem: React.FC<{ post: Post }> = ({ post }) => {
         header={
           <p className="text-sm text-gray-800 dark:text-gray-200 font-medium">
             {post.title}{' '}
-            <span className="text-gray-500 text-sm ml-1">
+            <span className="text-gray-400 text-sm ml-1">
               @usuario{post.userId}
             </span>
           </p>
