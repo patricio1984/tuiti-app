@@ -3,6 +3,7 @@ import '../styles/globals.css';
 import { Providers } from '@/app/Providers';
 
 export const metadata = {
+  metadataBase: new URL('https://tuiti.vercel.app'),
   title: 'Tuiti — Un homenaje frontend a Twitter con Next.js',
   description:
     'Una app inspirada en X (Twitter) que permite explorar, comentar y descubrir publicaciones de usuarios. Construida con Next.js, Orval y React Query.',
@@ -34,7 +35,7 @@ export const metadata = {
     title: 'Tuiti — Un homenaje frontend a Twitter con Next.js',
     description:
       'Una app inspirada en X (Twitter) que permite explorar, comentar y descubrir publicaciones de usuarios. Construida con Next.js, Orval y React Query.',
-    url: 'https://tusitio.com',
+    url: 'https://tuiti-app.vercel.app/',
     siteName: 'Tuiti',
     images: [
       {
@@ -53,7 +54,7 @@ export const metadata = {
     description:
       'Explorá una app frontend moderna basada en JSONPlaceholder. UI inspirada en Twitter. Hecha con Next.js.',
     creator: '@tu_usuario',
-    images: ['https://tusitio.com/og-image.png'],
+    images: ['/og-image.png'],
   },
 };
 

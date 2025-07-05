@@ -6,7 +6,8 @@ import pluginTs from '@typescript-eslint/eslint-plugin';
 export default [
   {
     ignores: [
-      'eslint.config.*',
+      'eslint.config.js',
+      '.eslintrc.js',
       'postcss.config.*',
       '**/*.cjs',
       '**/node_modules/**',
